@@ -1,0 +1,6 @@
+CREATE PROCEDURE [yedekle]
+AS
+BEGIN
+    BACKUP DATABASE Etut TO DISK = 'C:\VTYedek\Etut.bak' WITH NOFORMAT, 
+	INIT, NAME = 'Etut-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, STATS = 10;
+END;
